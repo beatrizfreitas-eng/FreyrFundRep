@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.api.getTest().subscribe({
       next: resp => this.msg = resp.message,
-      error: err => this.msg = 'Erro: não consegui contactar o API'
+      error: err => this.msg = 'Não consegui contactar o API'
     });
   }
 }
